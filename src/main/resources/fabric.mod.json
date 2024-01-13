@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "aidenisgay",
+	"version": "${version}",
+	"name": "aidenisgay",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Emrockno & TheKingOfIce"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/aidenisgay/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"emrockno.aidenisgay.Aidenisgay"
+		],
+		"client": [
+			"emrockno.aidenisgay.AidenisgayClient"
+		],
+		"fabric-datagen": [
+			"emrockno.aidenisgay.AidenisgayDataGenerator"
+		]
+	},
+	"mixins": [
+		"aidenisgay.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
